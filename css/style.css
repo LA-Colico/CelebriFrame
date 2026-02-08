@@ -283,6 +283,7 @@ button {
     display: flex;
     overflow: hidden;
     width: 100%;
+    height: 420px;
     border-radius: 8px;
 }
 
