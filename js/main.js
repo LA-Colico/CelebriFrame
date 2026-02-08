@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeSearch();
     initializeModals();
     initializeTestimonials();
+    initializeSetupSlider();
+    initializeProductGallery();
     initializeNewsletterForm();
     checkUserSession();
     addScrollAnimations();
@@ -67,6 +69,89 @@ function initializeNavigation() {
     navLinks.forEach(link => {
         if (link.getAttribute('href') === currentPage) {
             link.classList.add('active');
+        }
+    });
+}
+
+// ============================================
+// SETUP SLIDER
+// ============================================
+function initializeSetupSlider() {
+    const slider = document.getElementById('setupSlider');
+    if (!slider) return;
+    const slidesWrap = slider.querySelector('.slides');
+    const slides = slidesWrap.querySelectorAll('.slide');
+    const prev = document.getElementById('setupPrev');
+    const next = document.getElementById('setupNext');
+    let index = 0;
+    let timer = null;
+
+    function go(i) {
+        index = (i + slides.length) % slides.length;
+        slidesWrap.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() { go(index + 1); }
+    function prevSlide() { go(index - 1); }
+
+    if (next) next.addEventListener('click', () => { nextSlide(); resetTimer(); });
+    if (prev) prev.addEventListener('click', () => { prevSlide(); resetTimer(); });
+
+    function resetTimer() {
+        if (timer) clearInterval(timer);
+        timer = setInterval(nextSlide, 4500);
+    }
+
+    resetTimer();
+}
+
+// ============================================
+// PRODUCT GALLERY + LIGHTBOX
+// ============================================
+function initializeProductGallery() {
+    const grid = document.getElementById('productGrid');
+    const lightbox = document.getElementById('productLightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const closeBtn = document.getElementById('lightboxClose');
+    const nextBtn = document.getElementById('lightboxNext');
+    const prevBtn = document.getElementById('lightboxPrev');
+    if (!grid || !lightbox) return;
+
+    const items = Array.from(grid.querySelectorAll('.product-item img'));
+    let currentIndex = -1;
+
+    function open(index) {
+        currentIndex = index;
+        lightboxImage.src = items[currentIndex].src;
+        lightbox.setAttribute('aria-hidden', 'false');
+    }
+
+    function close() {
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImage.src = '';
+        currentIndex = -1;
+    }
+
+    function next() { if (currentIndex < items.length - 1) open(currentIndex + 1); else open(0); }
+    function prev() { if (currentIndex > 0) open(currentIndex - 1); else open(items.length - 1); }
+
+    items.forEach((img, i) => {
+        img.addEventListener('click', () => open(i));
+    });
+
+    closeBtn.addEventListener('click', close);
+    nextBtn.addEventListener('click', next);
+    prevBtn.addEventListener('click', prev);
+
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) close();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (lightbox.getAttribute('aria-hidden') === 'false') {
+            if (e.key === 'Escape') close();
+            if (e.key === 'ArrowRight') next();
+            if (e.key === 'ArrowLeft') prev();
         }
     });
 }
