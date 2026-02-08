@@ -1,5 +1,4 @@
 # 🎯 CELEBRIFRAME PHOTOBOOTH WEBSITE
-# 🎯 CELEBRIFRAME PHOTOBOOTH WEBSITE
 ## Complete Functional Website with Google Sheets Backend
 
 **A fully functional, creative, and interactive photobooth booking website**
