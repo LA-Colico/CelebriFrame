@@ -77,32 +77,15 @@ function initializeNavigation() {
 // SETUP SLIDER
 // ============================================
 function initializeSetupSlider() {
-    const slider = document.getElementById('setupSlider');
-    if (!slider) return;
-    const slidesWrap = slider.querySelector('.slides');
-    const slides = slidesWrap.querySelectorAll('.slide');
-    const prev = document.getElementById('setupPrev');
-    const next = document.getElementById('setupNext');
-    let index = 0;
-    let timer = null;
-
-    function go(i) {
-        index = (i + slides.length) % slides.length;
-        slidesWrap.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    function nextSlide() { go(index + 1); }
-    function prevSlide() { go(index - 1); }
-
-    if (next) next.addEventListener('click', () => { nextSlide(); resetTimer(); });
-    if (prev) prev.addEventListener('click', () => { prevSlide(); resetTimer(); });
-
-    function resetTimer() {
-        if (timer) clearInterval(timer);
-        timer = setInterval(nextSlide, 4500);
-    }
-
-    resetTimer();
+    // Masonry layout - CSS handles the grid, JS just adds scroll animation
+    const masonry = document.getElementById('setupMasonry');
+    if (!masonry) return;
+    
+    const items = masonry.querySelectorAll('.masonry-item');
+    items.forEach((item, index) => {
+        item.setAttribute('data-aos', 'fade-up');
+        item.setAttribute('data-aos-delay', index * 100);
+    });
 }
 
 // ============================================
