@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session - Celebriframe Photobooth</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Celebri Frame Logo.jpg" alt="Celebriframe Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-main">CELEBRIFRAME</span>
+                    <span class="logo-tagline">Celebrate Life, Frame the Moments</span>
+                </div>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="book-session.html" class="nav-link active">Book a Session</a>
+                <a href="our-works.html" class="nav-link">Our Works</a>
+                <a href="booking-policies.html" class="nav-link">Policies</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn-icon search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M14 14L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="btn-icon user-btn" id="userBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M4 18C4 14.6863 6.68629 12 10 12C13.3137 12 16 14.6863 16 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="booking-hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="booking-hero-content">
+                <h1>Book Your Perfect Session</h1>
+                <p>Create unforgettable memories with our professional self-photo studio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <!-- Main Booking Form -->
+                <div class="booking-form-container">
+                    <div class="booking-steps">
+                        <div class="step-indicator">
+                            <div class="step-item active" data-step="1">
+                                <div class="step-number">1</div>
+                                <div class="step-label">Location</div>
+                            </div>
+                            <div class="step-item" data-step="2">
+                                <div class="step-number">2</div>
+                                <div class="step-label">Date & Time</div>
+                            </div>
+                            <div class="step-item" data-step="3">
+                                <div class="step-number">3</div>
+                                <div class="step-label">Package</div>
+                            </div>
+                            <div class="step-item" data-step="4">
+                                <div class="step-number">4</div>
+                                <div class="step-label">Details</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="bookingForm" class="booking-form">
+                        <!-- Step 1: Location -->
+                        <div class="form-step active" data-step="1">
+                            <h2>Select Your Studio Location</h2>
+                            <div class="location-grid">
+                                <div class="location-card" data-location="manila">
+                                    <div class="location-image" style="background: linear-gradient(135deg, #FF6B9D 0%, #FEC5E5 100%);"></div>
+                                    <div class="location-info">
+                                        <h3>Celebriframe Manila</h3>
+                                        <p class="location-address">BGC, Taguig City</p>
+                                        <p class="location-hours">Sat-Sun: 1:00 PM - 8:00 PM</p>
+                                        <div class="location-backdrops">
+                                            <span class="backdrop-color" style="background: #FFD700;"></span>
+                                            <span class="backdrop-color" style="background: #A8E6CF;"></span>
+                                            <span class="backdrop-color" style="background: #4A90E2;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="location-card" data-location="cebu">
+                                    <div class="location-image" style="background: linear-gradient(135deg, #FFD93D 0%, #FFEFB8 100%);"></div>
+                                    <div class="location-info">
+                                        <h3>Celebriframe Cebu</h3>
+                                        <p class="location-address">Cebu City</p>
+                                        <p class="location-hours">Sat-Sun: 2:00 PM - 9:00 PM</p>
+                                        <div class="location-backdrops">
+                                            <span class="backdrop-color" style="background: #FFD700;"></span>
+                                            <span class="backdrop-color" style="background: #FF6B9D;"></span>
+                                            <span class="backdrop-color" style="background: #A8E6CF;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="location-card" data-location="davao">
+                                    <div class="location-image" style="background: linear-gradient(135deg, #A8E6CF 0%, #C4F5E1 100%);"></div>
+                                    <div class="location-info">
+                                        <h3>Celebriframe Davao</h3>
+                                        <p class="location-address">Davao City</p>
+                                        <p class="location-hours">Fri-Sun: 12:00 PM - 7:00 PM</p>
+                                        <div class="location-backdrops">
+                                            <span class="backdrop-color" style="background: #4A90E2;"></span>
+                                            <span class="backdrop-color" style="background: #FFD700;"></span>
+                                            <span class="backdrop-color" style="background: #FF6B9D;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="selectedLocation" name="location" required>
+                        </div>
+
+                        <!-- Step 2: Date & Time -->
+                        <div class="form-step" data-step="2">
+                            <h2>Select Date & Time</h2>
+                            <div class="form-group">
+                                <label>Preferred Date</label>
+                                <input type="date" id="bookingDate" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Time Slot</label>
+                                <div class="time-slots">
+                                    <button type="button" class="time-slot" data-time="1:00 PM">1:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="2:00 PM">2:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="3:00 PM">3:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="4:00 PM">4:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="5:00 PM">5:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="6:00 PM">6:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="7:00 PM">7:00 PM</button>
+                                    <button type="button" class="time-slot" data-time="8:00 PM">8:00 PM</button>
+                                </div>
+                                <input type="hidden" id="selectedTime" name="time" required>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Package -->
+                        <div class="form-step" data-step="3">
+                            <h2>Choose Your Package</h2>
+                            <div class="package-grid">
+                                <div class="package-card" data-package="solo">
+                                    <div class="package-header">
+                                        <h3>Solo Package</h3>
+                                        <div class="package-price">₱1,500</div>
+                                    </div>
+                                    <ul class="package-features">
+                                        <li>1 Person</li>
+                                        <li>60 Minutes</li>
+                                        <li>20 Edited Photos</li>
+                                        <li>All Backdrops</li>
+                                    </ul>
+                                </div>
+
+                                <div class="package-card" data-package="duo">
+                                    <div class="package-header">
+                                        <h3>Duo Package</h3>
+                                        <div class="package-price">₱2,500</div>
+                                    </div>
+                                    <ul class="package-features">
+                                        <li>2 People</li>
+                                        <li>60 Minutes</li>
+                                        <li>30 Edited Photos</li>
+                                        <li>All Backdrops</li>
+                                    </ul>
+                                </div>
+
+                                <div class="package-card" data-package="group">
+                                    <div class="package-header">
+                                        <h3>Group Package</h3>
+                                        <div class="package-price">₱3,500</div>
+                                    </div>
+                                    <ul class="package-features">
+                                        <li>3-5 People</li>
+                                        <li>90 Minutes</li>
+                                        <li>50 Edited Photos</li>
+                                        <li>All Backdrops</li>
+                                    </ul>
+                                </div>
+
+                                <div class="package-card" data-package="family">
+                                    <div class="package-header">
+                                        <h3>Family Package</h3>
+                                        <div class="package-price">₱4,500</div>
+                                    </div>
+                                    <ul class="package-features">
+                                        <li>6-11 People</li>
+                                        <li>120 Minutes</li>
+                                        <li>80 Edited Photos</li>
+                                        <li>All Backdrops</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="hidden" id="selectedPackage" name="package" required>
+                        </div>
+
+                        <!-- Step 4: Customer Details -->
+                        <div class="form-step" data-step="4">
+                            <h2>Your Details</h2>
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" name="fullName" placeholder="Juan Dela Cruz" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" name="phone" placeholder="+63 917 123 4567" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Special Requests (Optional)</label>
+                                <textarea name="requests" placeholder="Any special requests or preferences?" rows="4"></textarea>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                                <label for="agreeTerms">I agree to the <a href="booking-policies.html">booking policies</a></label>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="form-navigation">
+                            <button type="button" class="btn btn-secondary" id="prevBtn" style="display: none;">
+                                ← Previous
+                            </button>
+                            <button type="button" class="btn btn-primary" id="nextBtn">
+                                Next →
+                            </button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn" style="display: none;">
+                                Complete Booking
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Booking Summary Sidebar -->
+                <div class="booking-summary">
+                    <h3>Booking Summary</h3>
+                    <div class="summary-item">
+                        <span>Location:</span>
+                        <strong id="summaryLocation">-</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Date:</span>
+                        <strong id="summaryDate">-</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Time:</span>
+                        <strong id="summaryTime">-</strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>Package:</span>
+                        <strong id="summaryPackage">-</strong>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-item total">
+                        <span>Total Amount:</span>
+                        <strong id="summaryTotal">₱0</strong>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-full" id="confirmBookingBtn" style="margin-top: 20px; display: none;">
+                        Confirm & Pay
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="https://www.facebook.com/Celebriframephotobooth" target="_blank" rel="noopener noreferrer" class="footer-logo">
+                        <img src="images/Celebri Frame Logo.jpg" alt="Celebriframe Logo" class="logo-image" style="width: 40px; height: 40px;">
+                        <div>
+                            <div class="footer-brand">CELEBRIFRAME</div>
+                            <div class="footer-tagline">Celebrate Life, Frame the Moments</div>
+                        </div>
+                    </a>
+                    <p class="footer-description">Philippines' premier self-photo studio where you can capture professional-quality portraits yourself.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Celebriframephotobooth" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="book-session.html">Book a Session</a></li>
+                        <li><a href="our-works.html">Our Works</a></li>
+                        <li><a href="booking-policies.html">Booking Policies</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1C5.24 1 3 3.24 3 6C3 9.5 8 15 8 15C8 15 13 9.5 13 6C13 3.24 10.76 1 8 1Z" stroke="#FFD700" stroke-width="1.5"/>
+                                <circle cx="8" cy="6" r="2" stroke="#FFD700" stroke-width="1.5"/>
+                            </svg>
+                            <span>Metro Manila, Philippines</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M2 3L8 8L14 3" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+                                <rect x="1" y="2" width="14" height="12" rx="2" stroke="#FFD700" stroke-width="1.5"/>
+                            </svg>
+                            <span>celebriframephotobooth@gmail.com</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 1.5C2.5 1.5 2 2 2 2.5V4.5C2 11 9 14 9.5 14H11.5C12 14 12.5 13.5 12.5 13V11L10 9.5L9 10.5C9 10.5 6 9.5 5.5 6L6.5 5L5 2.5L3 1.5Z" stroke="#FFD700" stroke-width="1.5"/>
+                            </svg>
+                            <span>+63 917 123 4567</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="newsletter-text">Subscribe to get special offers and updates!</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-submit">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Celebriframe Photobooth. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+
+            <div class="auth-form active" id="signInForm">
+                <h2>Welcome Back!</h2>
+                <p class="auth-subtitle">Sign in to access your bookings and more</p>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="loginEmail" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                </form>
+                <div class="auth-switch">
+                    Don't have an account? <a href="#" id="showSignUp">Sign up</a>
+                </div>
+            </div>
+
+            <div class="auth-form" id="signUpForm">
+                <h2>Create Account</h2>
+                <p class="auth-subtitle">Join Celebriframe and start capturing moments</p>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="registerName" placeholder="Juan Dela Cruz" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="registerEmail" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="registerPhone" placeholder="+63 917 123 4567" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="registerPassword" placeholder="Minimum 8 characters" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" id="registerConfirmPassword" placeholder="Re-enter password" required>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <span>I agree to the <a href="booking-policies.html">Terms & Conditions</a></span>
+                    </label>
+                    <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                </form>
+                <div class="auth-switch">
+                    Already have an account? <a href="#" id="showSignIn">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

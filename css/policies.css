@@ -1,0 +1,210 @@
+/* ============================================
+   POLICIES PAGE STYLES
+   ============================================ */
+
+.policies-hero {
+    margin-top: 80px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.policies-hero .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.policies-hero .hero-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+}
+
+.policies-hero-content {
+    text-align: center;
+    color: var(--color-white);
+    max-width: 600px;
+}
+
+.policies-hero-content h1 {
+    font-size: 2.5rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+}
+
+.policies-hero-content p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   POLICIES SECTION
+   ============================================ */
+
+.policies-section {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-white);
+}
+
+.policies-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.policy-card {
+    background: var(--color-gray-light);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    border-left: 4px solid var(--color-gold);
+}
+
+.policy-card h2 {
+    font-size: 1.3rem;
+    font-family: var(--font-display);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-black);
+}
+
+.policy-card ul {
+    list-style: none;
+}
+
+.policy-card li {
+    padding: var(--spacing-sm) 0;
+    color: var(--color-gray-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: var(--spacing-lg);
+}
+
+.policy-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-gold);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* ============================================
+   POLICIES CTA
+   ============================================ */
+
+.policies-cta {
+    text-align: center;
+    background: var(--color-gray-light);
+    padding: var(--spacing-2xl);
+    border-radius: 8px;
+    border: 2px solid var(--color-gold);
+}
+
+.policies-cta h3 {
+    font-size: 1.8rem;
+    font-family: var(--font-display);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-black);
+}
+
+.policies-cta p {
+    font-size: 1rem;
+    color: var(--color-gray-dark);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .policies-content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .policies-hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .policies-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .policy-card {
+        padding: var(--spacing-md);
+    }
+    
+    .policy-card h2 {
+        font-size: 1.1rem;
+    }
+    
+    .policy-card li {
+        font-size: 0.9rem;
+    }
+    
+    .policies-cta {
+        padding: var(--spacing-lg);
+    }
+    
+    .policies-cta h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .policies-hero {
+        margin-top: 70px;
+        min-height: 300px;
+    }
+    
+    .policies-hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .policies-hero-content p {
+        font-size: 0.95rem;
+    }
+    
+    .policy-card {
+        padding: var(--spacing-md);
+        border-left-width: 3px;
+    }
+    
+    .policy-card h2 {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .policy-card li {
+        padding: var(--spacing-xs) 0;
+        padding-left: var(--spacing-md);
+        font-size: 0.85rem;
+    }
+    
+    .policies-cta {
+        padding: var(--spacing-lg);
+    }
+    
+    .policies-cta h3 {
+        font-size: 1.3rem;
+    }
+    
+    .policies-cta p {
+        font-size: 0.9rem;
+    }
+}

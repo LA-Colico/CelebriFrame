@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebriframe Photobooth - Celebrate Life, Frame the Moments</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Decorative Elements -->
+    <div class="film-strip film-strip-left"></div>
+    <div class="film-strip film-strip-right"></div>
+    <div class="sparkle-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Celebri Frame Logo.jpg" alt="Celebriframe Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-main">CELEBRIFRAME</span>
+                    <span class="logo-tagline">Celebrate Life, Frame the Moments</span>
+                </div>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="book-session.html" class="nav-link">Book a Session</a>
+                <a href="our-works.html" class="nav-link">Our Works</a>
+                <a href="booking-policies.html" class="nav-link">Policies</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn-icon search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M14 14L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="btn-icon user-btn" id="userBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M4 18C4 14.6863 6.68629 12 10 12C13.3137 12 16 14.6863 16 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg class="star-icon" width="20" height="20" viewBox="0 0 20 20" fill="#FFD700">
+                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"/>
+                </svg>
+                <span>Philippines' Premier Self-Photo Studio</span>
+                <svg class="star-icon" width="20" height="20" viewBox="0 0 20 20" fill="#FFD700">
+                    <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"/>
+                </svg>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-main">This Studio is For You.</span>
+                <span class="hero-title-sub">Where Every Moment Becomes a Masterpiece</span>
+            </h1>
+            <p class="hero-description">
+                Step into our professional self-photo studio and capture memories that last forever. 
+                We provide the space, equipment, and creative atmosphere—you bring the magic.
+            </p>
+            <div class="hero-cta">
+                <a href="book-session.html" class="btn btn-primary">
+                    <span>Book Your Session</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <span>Explore Features</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to discover</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Capture Your Story</h2>
+                <p class="section-subtitle">Whatever the occasion, we've got the perfect backdrop for your memories</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-image" style="background: linear-gradient(135deg, #FF6B9D 0%, #FEC5E5 100%);">
+                        <div class="feature-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="25" r="12" stroke="white" stroke-width="3"/>
+                                <path d="M18 45C18 38.3726 23.3726 33 30 33C36.6274 33 42 38.3726 42 45" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Level Up Your Portraits</h3>
+                        <p>Professional-quality solo shots that showcase your personality and style.</p>
+                        <a href="book-session.html" class="feature-link">Book Solo Session →</a>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-image" style="background: linear-gradient(135deg, #FFD93D 0%, #FFEFB8 100%);">
+                        <div class="feature-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="22" cy="22" r="8" stroke="white" stroke-width="3"/>
+                                <circle cx="38" cy="22" r="8" stroke="white" stroke-width="3"/>
+                                <circle cx="30" cy="38" r="8" stroke="white" stroke-width="3"/>
+                                <path d="M14 48C14 42 18 38 22 38M38 38C42 38 46 42 46 48" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Make Core Memories</h3>
+                        <p>Gather your squad and create unforgettable moments together.</p>
+                        <a href="book-session.html" class="feature-link">Book Group Session →</a>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-image" style="background: linear-gradient(135deg, #A8E6CF 0%, #C4F5E1 100%);">
+                        <div class="feature-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <path d="M30 15C30 15 35 20 42 20C42 30 35 38 30 45C25 38 18 30 18 20C25 20 30 15 30 15Z" stroke="white" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Quality Time = Quality Photos</h3>
+                        <p>Couples' sessions that capture your unique love story.</p>
+                        <a href="book-session.html" class="feature-link">Book Couples Session →</a>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-image" style="background: linear-gradient(135deg, #4A90E2 0%, #8BC6EC 100%);">
+                        <div class="feature-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <path d="M15 35C15 35 18 25 30 25C42 25 45 35 45 35M30 25C30 18 25 15 20 15M30 25C30 18 35 15 40 15" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="30" cy="38" r="3" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Bring Your Furry Friends!</h3>
+                        <p>Pet-friendly studio space for adorable photos with your companions.</p>
+                        <a href="book-session.html" class="feature-link">Book Pet Session →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Self-Portraits Made Easy</h2>
+                <p class="section-subtitle">Follow these simple steps to book your session</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Select Location & Schedule</h3>
+                        <p>Choose between our studio locations. Pick a schedule that works for you—your studio session, your way.</p>
+                    </div>
+                    <div class="step-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect x="20" y="15" width="40" height="50" rx="4" stroke="#FFD700" stroke-width="3"/>
+                            <path d="M25 15V10M55 15V10M20 25H60" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="30" cy="35" r="2" fill="#FFD700"/>
+                            <circle cx="40" cy="35" r="2" fill="#FFD700"/>
+                            <circle cx="50" cy="35" r="2" fill="#FFD700"/>
+                            <circle cx="30" cy="45" r="2" fill="#FFD700"/>
+                            <circle cx="40" cy="45" r="2" fill="#FFD700"/>
+                            <circle cx="50" cy="45" r="2" fill="#FFD700"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Customize Your Package</h3>
+                        <p>Select the number of people (and pets!), shoot duration, and how many edited photos you'd like.</p>
+                    </div>
+                    <div class="step-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect x="15" y="25" width="50" height="40" rx="4" stroke="#FFD700" stroke-width="3"/>
+                            <circle cx="40" cy="45" r="12" stroke="#FFD700" stroke-width="3"/>
+                            <circle cx="40" cy="45" r="6" fill="#FFD700"/>
+                            <path d="M30 25L35 15L45 15L50 25" stroke="#FFD700" stroke-width="3"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Secure Your Spot</h3>
+                        <p>Proceed to checkout and complete your payment. You'll receive an email once booking is confirmed.</p>
+                    </div>
+                    <div class="step-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="25" stroke="#FFD700" stroke-width="3"/>
+                            <path d="M30 40L37 47L52 32" stroke="#FFD700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-centered">
+                <a href="book-session.html" class="btn btn-primary btn-large">
+                    Start Booking Now
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section 
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real stories from real people who captured their moments with us</p>
+            </div>
+
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Absolutely amazing experience! The studio setup is professional, and the vibe is so relaxed. Got the best photos I've ever taken!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <div class="author-name">Maria Santos</div>
+                            <div class="author-role">Birthday Photoshoot</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Perfect for our anniversary! We loved the privacy and the variety of backdrops. Will definitely come back!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <div class="author-name">Juan & Lisa Cruz</div>
+                            <div class="author-role">Couples Session</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The staff were super helpful and friendly! The booking process was smooth and the edited photos exceeded our expectations."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <div class="author-name">Angela Reyes</div>
+                            <div class="author-role">Solo Session</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="prevTestimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn next" id="nextTestimonial">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-background"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Frame Your Moments?</h2>
+                <p class="cta-description">Join hundreds of satisfied clients who've captured their special moments with Celebriframe. Your perfect photo is just one click away.</p>
+                <a href="book-session.html" class="btn btn-primary btn-large">
+                    Book Your Session Now
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="https://www.facebook.com/Celebriframephotobooth" target="_blank" rel="noopener noreferrer" class="footer-logo">
+                        <img src="images/Celebri Frame Logo.jpg" alt="Celebriframe Logo" class="logo-image" style="width: 40px; height: 40px;">
+                        <div>
+                            <div class="footer-brand">CELEBRIFRAME</div>
+                            <div class="footer-tagline">Celebrate Life, Frame the Moments</div>
+                        </div>
+                    </a>
+                    <p class="footer-description">Philippines' premier self-photo studio where you can capture professional-quality portraits yourself.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Celebriframephotobooth" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="book-session.html">Book a Session</a></li>
+                        <li><a href="our-works.html">Our Works</a></li>
+                        <li><a href="booking-policies.html">Booking Policies</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 1C5.24 1 3 3.24 3 6C3 9.5 8 15 8 15C8 15 13 9.5 13 6C13 3.24 10.76 1 8 1Z" stroke="#FFD700" stroke-width="1.5"/>
+                                <circle cx="8" cy="6" r="2" stroke="#FFD700" stroke-width="1.5"/>
+                            </svg>
+                            <span>Metro Manila, Philippines</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M2 3L8 8L14 3" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+                                <rect x="1" y="2" width="14" height="12" rx="2" stroke="#FFD700" stroke-width="1.5"/>
+                            </svg>
+                            <span>celebriframephotobooth@gmail.com</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 1.5C2.5 1.5 2 2 2 2.5V4.5C2 11 9 14 9.5 14H11.5C12 14 12.5 13.5 12.5 13V11L10 9.5L9 10.5C9 10.5 6 9.5 5.5 6L6.5 5L5 2.5L3 1.5Z" stroke="#FFD700" stroke-width="1.5"/>
+                            </svg>
+                            <span>+63 917 123 4567</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="newsletter-text">Subscribe to get special offers and updates!</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-submit">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Celebriframe Photobooth. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+
+            <!-- Sign In Form -->
+            <div class="auth-form active" id="signInForm">
+                <h2>Welcome Back!</h2>
+                <p class="auth-subtitle">Sign in to access your bookings and more</p>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="loginEmail" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                </form>
+                <div class="auth-switch">
+                    Don't have an account? <a href="#" id="showSignUp">Sign up</a>
+                </div>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="auth-form" id="signUpForm">
+                <h2>Create Account</h2>
+                <p class="auth-subtitle">Join Celebriframe and start capturing moments</p>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="registerName" placeholder="Juan Dela Cruz" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="registerEmail" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="registerPhone" placeholder="+63 917 123 4567" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="registerPassword" placeholder="Minimum 8 characters" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" id="registerConfirmPassword" placeholder="Re-enter password" required>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <span>I agree to the <a href="booking-policies.html">Terms & Conditions</a></span>
+                    </label>
+                    <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                </form>
+                <div class="auth-switch">
+                    Already have an account? <a href="#" id="showSignIn">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
